@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	int i,n,m,arr1[10],arr2[10],merged[20];
+	printf("number of elements in array 1:");
+	scanf("%d",&n);
+	printf("number of elements in array 2:");
+	scanf("%d",&m);
+	printf("Array 1:\n");
+	for(i=0;i<n;i++)
+	scanf("%d",&arr1[i]);
+	printf("Array 2:\n");
+	for(i=0;i<m;i++)
+	scanf("%d",&arr2[i]);
+	for(i=0;i<n;i++)
+	merged[i]=arr1[i];
+	for(i=0;i<m;i++)
+	merged[n+i]=arr2[i];
+	printf("merges array is:");
+	for(i=0;i<n+m;i++)
+	printf("%d ",merged[i]);
+	return 0;
+}
